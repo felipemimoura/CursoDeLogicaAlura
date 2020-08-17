@@ -1,0 +1,23 @@
+<meta charset="utf-8" />
+<script>
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+  function pulaLinha() {
+    document.write('<br>');
+  }
+  var anoDescobrimentoDoBrasil = 1500;
+  var anoAtual = 2020;
+  var mediaGeracoes = 28;
+  var quantidadeGeracoes = Math.round(
+    (anoAtual - anoDescobrimentoDoBrasil) / mediaGeracoes
+  );
+
+  mostra(
+    'Passou ' +
+      (anoAtual - anoDescobrimentoDoBrasil) +
+      ' desde o descobrimento do Brasil'
+  );
+  mostra('No Brasil já houve ' + quantidadeGeracoes + ' gerações');
+</script>

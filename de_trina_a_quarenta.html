@@ -1,0 +1,25 @@
+<meta charset="utf-8" />
+<script>
+  function pulaLinha() {
+    document.write('<br>');
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  var numero1 = 30;
+  var numero2 = 40;
+  while (numero1 <= numero2) {
+    if (numero1 == 33 || numero1 == 37) {
+      mostra('Não mostrar esse numero');
+      pulaLinha();
+      numero1 += 1;
+    } else {
+      mostra(numero1);
+      pulaLinha();
+      numero1 += 1;
+    }
+  }
+</script>

@@ -10,7 +10,41 @@
   document.write((20 + 10 + 30) / 3);
   document.write('<br>A soma  das idades é:  ' + (20 + 10 + 30));
 
-  document.write('18 + 2'); */
+  document.write('18 + 2');
 
-  document.write('A' + 'B' + 20 + 10 + 'C' + (5 + 10) + 'D');
+  document.write('A' + 'B' + 20 + 10 + 'C' + (5 + 10) + 'D'); */
+  //Começando em variáveis
+  /*   var ano = 2020;
+  document.write('Flavio tem ' + (ano - 1977) + ' anos');
+  document.write('<br>');
+  document.write('Joaquim tem ' + (ano - 1996) + ' anos');
+  document.write('<br>');
+  document.write('Barney tem ' + (ano - 1976) + ' anos');
+  document.write('<br>'); */
+
+  //<h3>Calculando média</h3>
+  /*   var idadeFlavio = ano - 1977;
+  var idadeJoaquim = ano - 1996;
+  var idadeBarney = ano - 1976;
+  var media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3;
+
+  document.write('A média das idade é: ' + Math.round(media)); */
+
+  escreveNaTela('Funções');
+  function pulalinha() {
+    document.write('<br>');
+    document.write('<br>');
+  }
+  function escreveNaTela(texto) {
+    document.write(texto);
+    pulalinha();
+  }
+  var ano = 2016;
+
+  escreveNaTela('Flavio tem ' + (ano - 1977) + ' anos');
+
+  escreveNaTela('Joaquim tem ' + (ano - 1996) + ' anos');
+
+  ano = 2017;
+  escreveNaTela('Barney tem ' + (ano - 1976) + ' anos');
 </script>
